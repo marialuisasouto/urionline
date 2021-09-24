@@ -1,0 +1,33 @@
+import java.io.IOException;
+import java.util.Scanner;
+ 
+/**
+ * IMPORTANT: 
+ *      O nome da classe deve ser "Main" para que a sua solução execute
+ *      Class name must be "Main" for your solution to execute
+ *      El nombre de la clase debe ser "Main" para que su solución ejecutar
+ */
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+         // Declarações e Inicializações
+         Scanner teclado = new Scanner(System.in);
+         int km;
+         int minutos;
+         
+         // Leitura dos dados
+         km = teclado.nextInt();
+         
+         // Processamento dos dados
+         minutos = (60 * km) / 30;
+         
+         // Impressão dos resultados
+         System.out.println(minutos + " minutos");
+         
+         // Liberação dos recursos
+         teclado.close();
+ 
+    }
+ 
+}
