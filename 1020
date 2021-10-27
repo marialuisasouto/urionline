@@ -1,0 +1,29 @@
+import java.io.IOException;
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        // Declarações e Inicializações
+         Scanner teclado = new Scanner(System.in);
+         int idade;
+       
+        // Leitura dos dados
+         idade = teclado.nextInt();
+         
+         // Processamento dos dados
+         
+         // Impressão dos resultados
+        System.out.println(idade / 365 + " ano(s)");
+        idade = idade % 365;
+        System.out.println(idade / 30 + " mes(es)");
+        idade = idade % 30;
+        System.out.println(idade + " dia(s)");
+      
+         // Liberação dos recursos
+         teclado.close();
+ 
+    }
+ 
+}
