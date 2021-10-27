@@ -1,0 +1,72 @@
+import java.io.IOException;
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        // Declarações e Inicializações
+        Scanner teclado = new Scanner(System.in);
+        int valor;
+         
+         // Leitura dos dados
+        valor = teclado.nextInt();
+
+        // Processamento dos dados
+        // Impressão dos resultados
+
+        if (valor == 1) 
+        {
+                System.out.print("January\n");
+        }
+        if (valor == 2) 
+        {
+                System.out.print("February\n");
+        }
+        if (valor == 3) 
+        {
+                System.out.print("March\n");
+        }
+        if (valor == 4) 
+        {
+                System.out.print("April\n");
+        } 
+        if (valor == 5) 
+        {
+                System.out.print("May\n");
+        }
+        if (valor == 6) 
+        {
+                System.out.print("June\n");
+        }
+        if (valor == 7) 
+        {
+                System.out.print("July\n");
+        }
+        if (valor == 8) 
+        {
+                System.out.print("August\n");
+        }
+        if (valor == 9) 
+        {
+                System.out.print("September\n");
+        }
+        if (valor == 10) 
+        {
+                System.out.print("October\n");
+        }
+        if (valor == 11) 
+        {
+                System.out.print("November\n");
+        }
+        if (valor == 12) 
+        {
+                System.out.print("December\n");
+        }
+        
+        // Liberação dos recursos
+         teclado.close();
+ 
+    }
+ 
+}
