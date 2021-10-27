@@ -1,0 +1,38 @@
+import java.io.IOException;
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+      // Declarações e Inicializações
+         Scanner teclado = new Scanner(System.in);
+         int valor;
+         int horas;
+         int minutos;
+         int segundos;
+         
+        // Leitura dos dados
+         valor = teclado.nextInt();
+         
+        // Processamento dos dados
+         
+        horas = valor / 3600;
+        
+        valor = valor % 3600;
+        
+        minutos = valor / 60;
+        
+        valor = valor % 60;
+        
+        segundos = valor % 60;
+          
+         // Impressão dos resultados      
+         System.out.println(horas + ":" + minutos + ":" + segundos);     
+                
+         // Liberação dos recursos
+         teclado.close();
+ 
+    }
+ 
+}
