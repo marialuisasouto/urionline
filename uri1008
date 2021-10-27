@@ -1,0 +1,34 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+
+         // Declarações e Inicializações
+         Scanner teclado = new Scanner(System.in);
+         int a;
+         int b;
+         double c;
+         int number;
+         double salary;
+         
+         // Leitura dos dados
+         a = teclado.nextInt();
+         b = teclado.nextInt();
+         c = teclado.nextDouble();
+         
+         // Processamento dos dados
+         number = a;
+         salary = b * c;
+         
+         // Impressão dos resultados
+         System.out.printf("NUMBER = %d\n", number);
+         System.out.printf("SALARY = U$ %.2f\n", salary);
+         
+         // Liberação dos recursos
+         teclado.close();
+ 
+    }
+ 
+}
