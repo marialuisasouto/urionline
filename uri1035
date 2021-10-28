@@ -1,0 +1,29 @@
+import java.io.IOException;
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        // Declarações e Inicializações e Leitura dos dados
+        Scanner teclado = new Scanner(System.in);
+        int a = teclado.nextInt();
+        int b = teclado.nextInt();
+        int c = teclado.nextInt();
+        int d = teclado.nextInt();
+ 
+        // Processamento dos dados e Impressão dos resultados
+
+        if ((b>c) && (d>a) && (c+d > a+b) && (c >0) && (d > 0) && (a%2 == 0))
+        {
+            System.out.println("Valores aceitos");
+        }
+        else {
+            System.out.println("Valores nao aceitos");
+        }
+         
+        // Liberação dos recursos
+        teclado.close();
+ 
+    }
+}
