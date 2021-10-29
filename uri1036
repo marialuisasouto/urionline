@@ -1,0 +1,54 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main_1036 {
+
+    public static void main(String[] args) throws IOException {
+
+         // Declarações e inicializações
+         Scanner teclado = new Scanner(System.in);
+         boolean impossivel = false;
+         double a;
+         double b;
+         double c;
+         double raiz1 = 0;
+         double raiz2 = 0;
+         double delta;
+
+         // Leitura dos dados
+         a = teclado.nextDouble();
+         b = teclado.nextDouble();
+         c = teclado.nextDouble();
+
+         // Processamento dos dados
+         delta = b * b - 4 * a * c;
+         if (delta < 0 || a == 0)
+         {
+            impossivel = true;
+         }
+         else if (delta == 0)
+         {
+             raiz1 = ((-b) + Math.sqrt(delta)) / (2 * a);
+             raiz2 = raiz1;
+         }
+         else
+         {
+             raiz1 = ((-b) + Math.sqrt(delta)) / (2 * a);
+             raiz2 = ((-b) - Math.sqrt(delta)) / (2 * a);
+         }
+
+         // Impressão dos resultados
+         if (impossivel)
+         {
+             System.out.println("Impossivel calcular");
+         }
+         else
+         {
+             System.out.printf("R1 = %.5f\n", raiz1);
+             System.out.printf("R2 = %.5f\n", raiz2);
+         }
+
+         // Liberação dos recursos
+         teclado.close();
+    }
+}
