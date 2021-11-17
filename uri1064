@@ -1,0 +1,37 @@
+import java.io.IOException;
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        // Declarações e Inicializações e Leitura dos dados
+        Scanner teclado = new Scanner(System.in);
+        int positivos = 0;
+        double somaPositivos = 0;
+        int contadorLaco = 0;
+        double media = 0;
+         
+        // Processamento dos dados
+        while(contadorLaco < 6)
+        {
+            double valor = teclado.nextDouble();
+            if (valor >= 0.0)
+            {
+                positivos++;
+                somaPositivos += valor;
+            }
+            contadorLaco++;
+        }
+        media = somaPositivos / positivos;
+         
+        // Impressão dos resultados
+        System.out.printf("%d valores positivos\n", positivos);
+        System.out.printf("%.1f\n", media);
+         
+        // Liberação dos recursos
+        teclado.close();
+ 
+    }
+ 
+}
